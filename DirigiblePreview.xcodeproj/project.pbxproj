@@ -16,6 +16,12 @@
 		5F1472DC2885AB8D0011F206 /* DirigiblePreviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1472DB2885AB8D0011F206 /* DirigiblePreviewTests.swift */; };
 		5F1472E62885AB8D0011F206 /* DirigiblePreviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1472E52885AB8D0011F206 /* DirigiblePreviewUITests.swift */; };
 		5F1472E82885AB8D0011F206 /* DirigiblePreviewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1472E72885AB8D0011F206 /* DirigiblePreviewUITestsLaunchTests.swift */; };
+		5F1472F528868A780011F206 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1472F428868A780011F206 /* ScanViewController.swift */; };
+		5F1472F7288690730011F206 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1472F6288690730011F206 /* ScannerViewController.swift */; };
+		5F1472F9288691D10011F206 /* WebAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1472F8288691D10011F206 /* WebAppViewController.swift */; };
+		5F1472FB288692020011F206 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5F1472FA288692020011F206 /* Podfile */; };
+		5F1472FF288692550011F206 /* NativeScript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F1472FD2886924F0011F206 /* NativeScript.framework */; };
+		5F147300288692550011F206 /* NativeScript.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5F1472FD2886924F0011F206 /* NativeScript.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5F147301288692550011F206 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5F147300288692550011F206 /* NativeScript.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5F1472C12885AB8A0011F206 /* DirigiblePreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DirigiblePreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F1472C42885AB8A0011F206 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +69,12 @@
 		5F1472E12885AB8D0011F206 /* DirigiblePreviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DirigiblePreviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F1472E52885AB8D0011F206 /* DirigiblePreviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirigiblePreviewUITests.swift; sourceTree = "<group>"; };
 		5F1472E72885AB8D0011F206 /* DirigiblePreviewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirigiblePreviewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5F1472F428868A780011F206 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		5F1472F6288690730011F206 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		5F1472F8288691D10011F206 /* WebAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAppViewController.swift; sourceTree = "<group>"; };
+		5F1472FA288692020011F206 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		5F1472FD2886924F0011F206 /* NativeScript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NativeScript.framework; sourceTree = "<group>"; };
+		5F1473022886926F0011F206 /* DirigiblePreview-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DirigiblePreview-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F1472FF288692550011F206 /* NativeScript.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +106,8 @@
 		5F1472B82885AB8A0011F206 = {
 			isa = PBXGroup;
 			children = (
+				5F1472FC288692350011F206 /* Frameworks */,
+				5F1472FA288692020011F206 /* Podfile */,
 				5F1472C32885AB8A0011F206 /* DirigiblePreview */,
 				5F1472DA2885AB8D0011F206 /* DirigiblePreviewTests */,
 				5F1472E42885AB8D0011F206 /* DirigiblePreviewUITests */,
@@ -102,10 +131,14 @@
 				5F1472C42885AB8A0011F206 /* AppDelegate.swift */,
 				5F1472C62885AB8A0011F206 /* SceneDelegate.swift */,
 				5F1472C82885AB8A0011F206 /* ViewController.swift */,
+				5F1472F428868A780011F206 /* ScanViewController.swift */,
+				5F1472F6288690730011F206 /* ScannerViewController.swift */,
+				5F1472F8288691D10011F206 /* WebAppViewController.swift */,
 				5F1472CA2885AB8A0011F206 /* Main.storyboard */,
 				5F1472CD2885AB8C0011F206 /* Assets.xcassets */,
 				5F1472CF2885AB8C0011F206 /* LaunchScreen.storyboard */,
 				5F1472D22885AB8C0011F206 /* Info.plist */,
+				5F1473022886926F0011F206 /* DirigiblePreview-Bridging-Header.h */,
 			);
 			path = DirigiblePreview;
 			sourceTree = "<group>";
@@ -127,6 +160,14 @@
 			path = DirigiblePreviewUITests;
 			sourceTree = "<group>";
 		};
+		5F1472FC288692350011F206 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F1472FD2886924F0011F206 /* NativeScript.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +178,7 @@
 				5F1472BD2885AB8A0011F206 /* Sources */,
 				5F1472BE2885AB8A0011F206 /* Frameworks */,
 				5F1472BF2885AB8A0011F206 /* Resources */,
+				5F147301288692550011F206 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,6 +237,7 @@
 				TargetAttributes = {
 					5F1472C02885AB8A0011F206 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 					5F1472D62885AB8D0011F206 = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -233,6 +276,7 @@
 			files = (
 				5F1472D12885AB8C0011F206 /* LaunchScreen.storyboard in Resources */,
 				5F1472CE2885AB8C0011F206 /* Assets.xcassets in Resources */,
+				5F1472FB288692020011F206 /* Podfile in Resources */,
 				5F1472CC2885AB8A0011F206 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +305,9 @@
 				5F1472C92885AB8A0011F206 /* ViewController.swift in Sources */,
 				5F1472C52885AB8A0011F206 /* AppDelegate.swift in Sources */,
 				5F1472C72885AB8A0011F206 /* SceneDelegate.swift in Sources */,
+				5F1472F9288691D10011F206 /* WebAppViewController.swift in Sources */,
+				5F1472F7288690730011F206 /* ScannerViewController.swift in Sources */,
+				5F1472F528868A780011F206 /* ScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,9 +482,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H6KAAZFWNY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DirigiblePreview/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -453,6 +505,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.eclipse.dirigiblepreview.DirigiblePreview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DirigiblePreview/DirigiblePreview-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -463,9 +517,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H6KAAZFWNY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DirigiblePreview/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -481,6 +540,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.eclipse.dirigiblepreview.DirigiblePreview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DirigiblePreview/DirigiblePreview-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
